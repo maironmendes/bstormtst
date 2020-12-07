@@ -35,4 +35,15 @@ devops test server flying!!
 127.0.0.1 - - [07/Dec/2020 10:39:28] "GET / HTTP/1.1" 200 -
 
 
+Utilizando a imagem enviada ao dockerhub
+Baixando a imagem:
+docker pull maironmendes/bstormtst-demo
+
+Iniciando a imagem:
+docker run -it --rm -p8081:8081 maironmendes/bstormtst-demo
+
+Testando a conexão:
+curl -H "Authorization: Token Token" http://localhost:8081/
+
+
 
